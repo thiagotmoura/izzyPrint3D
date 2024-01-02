@@ -4,7 +4,7 @@ import SearchBar from '~/components/SearchBar.vue'
 import ImageViewModal from '~/components/ImageViewModal.vue'
 import EmptyState from '~/components/EmptyState.vue';
 
-const productListFiltered = useProductListFiltered().value
+const productListFiltered = useProductListFiltered()
 const imageView = useImageView()
 </script>
 
@@ -13,7 +13,6 @@ const imageView = useImageView()
   <div class="flex gap-5 p-5 max-w-[1350px] flex-row-reverse">
     <SearchBar />
   </div>
-  <!-- {{ productListFiltered.length }} -->
     <ProductList v-if="productListFiltered.length"/>
     <EmptyState v-else/>
     <ImageViewModal v-if="imageView" />

@@ -14,7 +14,7 @@ export const PRODUCTS = [
   },
   {
     id: 2,
-    name: 'Carrot',
+    name: 'Carrot Sulong',
     category: 'One Piece',
     images: [
       "https://media.discordapp.net/attachments/1190367624253681664/1190381412063391895/cce254f7-7022-42a6-aa08-7c946fb92514.png?ex=65a19814&is=658f2314&hm=43bc8bf61d1d28e4f3295c2bed3d57d025a9db2d230fb5a22b3132d0206b4dbd&=&format=webp&quality=lossless&width=601&height=601",
