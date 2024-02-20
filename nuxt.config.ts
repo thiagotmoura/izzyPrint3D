@@ -10,5 +10,5 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: []
+  modules: ['nuxt-icon']
 })
