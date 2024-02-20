@@ -1,6 +1,6 @@
 <script setup>
-import Index from './pages'
-import Logo from './components/Logo.vue'
+  import Index from './pages'
+  import Logo from './components/Images/Logo.vue'
 </script>
 
 <template>

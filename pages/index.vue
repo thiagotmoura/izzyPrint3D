@@ -1,20 +1,22 @@
 <script setup>
-import ProductList from '~/components/Product/ProductList.vue'
-import SearchBar from '~/components/SearchBar.vue'
-import ImageViewModal from '~/components/ImageViewModal.vue'
-import EmptyState from '~/components/EmptyState.vue';
+  import ProductList from '~/components/Product/ProductList.vue'
+  import SearchBar from '~/components/SearchBar.vue'
+  import ImageViewModal from '~/components/ImageViewModal.vue'
+  import EmptyState from '~/components/EmptyState.vue';
 
-const productListFiltered = useProductListFiltered()
-const imageView = useImageView()
+  const productListFiltered = useProductListFiltered()
+  const productView = useProductView()
 </script>
 
 <template>
-  <div class="max-w-[1400px]">
-  <div class="flex gap-5 p-5 max-w-[1350px] flex-row-reverse">
-    <SearchBar />
-  </div>
+  <div class="relative max-w-[1400px]">
+    <div class="mb-20">
+      <SearchBar />
+    </div>
+
     <ProductList v-if="productListFiltered.length"/>
-    <EmptyState v-else/>
-    <ImageViewModal v-if="imageView" />
+    <EmptyState v-else class="min-w-[1200px]"/>
+
+    <ImageViewModal v-if="productView" />
   </div>
 </template>

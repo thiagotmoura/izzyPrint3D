@@ -1,16 +1,16 @@
 <script setup>
-import { watch } from 'vue'
+  import { watch } from 'vue'
 
-const searchValue = useSearchValue()
-const productListFiltered = useProductListFiltered()
+  const searchValue = useSearchValue()
+  const productListFiltered = useProductListFiltered()
 
-watch(searchValue, (newValue) => {
-  productListFiltered.value = useSearchProduct(newValue)
-})
+  watch(searchValue, (newValue) => {
+    productListFiltered.value = useSearchProduct(newValue)
+  })
 </script>
 
 <template>
-  <div class="flex gap-3 items-center text-slate-600">
+  <div class="absolute right-10 flex gap-3 items-center text-slate-600">
     <label for="search-value">Buscar:</label>
     <input
       id="search-value"
